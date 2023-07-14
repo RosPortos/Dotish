@@ -1,0 +1,20 @@
+// базовые подключения
+@import "./common/button";
+@import "./common/vars";
+@import "./common/mixins";
+@import "./common/fonts";
+@import "./common/null";
+
+@import "global";
+
+// подключения компонентов страницы
+@import "header";
+@import "footer";
+
+@import "./components/promo";
+@import "./components/about";
+@import "./components/card-slider";
+@import "./components/faq";
+@import "./components/contact";
+@import "./components/instagram";
+@import "./components/reviews";

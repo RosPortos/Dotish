@@ -1,0 +1,35 @@
+.btn {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 20px 60px;
+    text-decoration: none;
+}
+.btn--orange {
+    color: #6a3f2d;
+    background: linear-gradient(
+        180deg,
+        #fae79f 0%,
+        #ddb97b 52.08%,
+        #c6975a 100%
+    );
+}
+.btn--border {
+    background: linear-gradient(
+        180deg,
+        #fae79f 0%,
+        #ddb97b 52.08%,
+        #c6975a 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    position: relative;
+    border: 2px solid;
+    border-image: linear-gradient(
+        180deg,
+        #fae79f 0%,
+        #ddb97b 52.08%,
+        #c6975a 100%
+    );
+    border-image-slice: 1;
+}

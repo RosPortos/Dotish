@@ -1,0 +1,45 @@
+@include('partials/head.html')
+
+<div class="page">
+    @include('partials/header.html')
+
+    <main class="main">
+        <div class="section-404">
+            <div class="section-404__inner">
+                <div class="container">
+
+                    <div class="breadcums-block">
+                        <ul class="breadcums">
+                            <li class="breadcrumb-item">
+                                <a href="#">דף הבית</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>404</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="section-404__content">
+                        <div class="section-404__content-title">
+                            404
+                        </div>
+                        <div class="section-404__content-subtitle">
+                            הדף שאתה מחפש לא נמצא כאן. אנו מצטערים על התקלה
+                        </div>
+                        <div class="section-404__content-button">
+                            <a class="btn"
+                                href="#">
+                                עבור לדף הבית
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @include('partials/footer.html')
+</div>
+
+@include('partials/scripts.html')

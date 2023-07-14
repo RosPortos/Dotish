@@ -1,0 +1,32 @@
+* {
+    font-family: "Open Sans Hebrew";
+}
+
+body {
+    &.scroll-hide {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1730px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page-site {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.pd-sec {
+    padding: 100px 0;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+}

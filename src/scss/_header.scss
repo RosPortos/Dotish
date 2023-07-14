@@ -1,0 +1,112 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__logo {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+.nav {
+    ul {
+        display: flex;
+        gap: 40px;
+        li {
+            &:nth-child(4) {
+                margin-left: 420px;
+            }
+        }
+        a {
+            color: #fff;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration: none;
+            position: relative;
+            @media (any-hover: hover) {
+                &:hover {
+                    &::before {
+                        left: inherit;
+                        right: 0;
+                        width: 100%;
+                    }
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+.header__favorite {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/favorite-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.basket {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    padding-right: 26px;
+    position: relative;
+    cursor: pointer;
+}
+
+.basket-icon {
+    position: absolute;
+    right: 0;
+    background-image: url("../img/basket-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    .basket__num {
+        content: "";
+        position: absolute;
+        color: #51392f;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 50%;
+        background: linear-gradient(
+            180deg,
+            #fae79f 0%,
+            #ddb97b 52.08%,
+            #c6975a 100%
+        );
+        width: 18px;
+        height: 18px;
+        right: -10px;
+        top: -10px;
+    }
+}

@@ -1,0 +1,63 @@
+.promo {
+    position: relative;
+    padding-top: 50px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.6) 0%,
+                rgba(0, 0, 0, 0) 100%
+            ),
+            linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 75.12%);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.promo__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/promo-bg.webp");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.promo__wrapper {
+    padding: 200px 0;
+}
+
+.promo__offer {
+    max-width: 750px;
+}
+.promo__subtitle {
+    color: #fff;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 300;
+}
+.promo__title {
+    color: #fff;
+    font-size: 130px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.promo__descr {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 120%;
+}
+.promo__btns {
+    margin-top: 40px;
+    gap: 7px;
+    display: flex;
+}
