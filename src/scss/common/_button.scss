@@ -3,6 +3,7 @@
     font-weight: 700;
     padding: 20px 60px;
     text-decoration: none;
+    display: inline-block;
 }
 .btn--orange {
     color: #6a3f2d;
@@ -32,4 +33,23 @@
         #c6975a 100%
     );
     border-image-slice: 1;
+}
+
+
+.btn--instagram {
+    position: relative;
+    display: inline-flex;
+    gap: 8px;
+
+    &::before {
+        content: '';
+        position: relative;
+        background-image: url(../img/inst-color.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 21px;
+        flex-grow: 1;
+    }
 }

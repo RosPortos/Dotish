@@ -1,0 +1,176 @@
+.footer {
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .footer__top {
+        padding: 90px 0;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 2fr 2.6fr;
+    }
+
+    .footer__info {
+        margin-left: 40px;
+        .logo {
+            width: 194px;
+            height: auto;
+            display: block;
+            margin-bottom: 33px;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+
+    .footer__descr {
+        font-family: 'Mikhmoret';
+        color: #B7B0AE;
+        text-align: right;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        margin-bottom: 62px;
+    }
+
+    .footer__info-link {
+        color: #FFF;
+        text-align: right;
+        font-family: 'Mikhmoret';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        text-decoration-line: underline;
+        display: block;
+
+        &:not(:last-of-type) {
+            margin-bottom: 25px;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-grow: 1;
+        gap: 30px;
+
+        .footer__nav-wrap {
+            min-width: 170px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                li {
+                    a {
+                        color: #B7B0AE;
+                        text-align: right;
+                        font-family: 'Mikhmoret';
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 120%;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__nav-title {
+        color: #FFF;
+        font-family: 'Mikhmoret';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+    .footer__map {
+        > * {
+            width: 100%;
+        }
+    }
+
+    .footer__bottom {
+        padding: 36px 0;
+        border-top: 1px solid #695B55;
+    }
+
+    .footer__bottom-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__bottom-left {
+        color: #B7B0AE;
+        font-family: 'Mikhmoret';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        text-align: left;
+
+        a {
+            color: #FFF;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer__bottom-center {
+        color: #B7B0AE;
+        text-align: center;
+        font-family: 'Mikhmoret';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .soc-wrap {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: repeat(3, 19px);
+        text-align: right;
+
+        a {
+            width: 19px;
+            height: 19px;
+            transition: transform .3s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: contain;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                filter: brightness(0) saturate(100%)invert(100%) sepia(0%) saturate(7499%) hue-rotate(193deg) brightness(114%) contrast(97%);
+            }
+        }
+    }
+}
