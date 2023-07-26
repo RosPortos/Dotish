@@ -1,0 +1,71 @@
+.pagination {
+    margin-top: 45px;
+    margin-bottom: 83px;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 306px;
+        width: 100%;
+
+        li {
+            .page-numbers {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.725;
+                display: flex;
+                width: 54px;    
+                height: 54px;
+                align-items: center;
+                color: #4A352C;
+                cursor: pointer;
+                margin: 0 10px;
+
+                &.current,
+                &:hover {
+                    font-weight: 700;
+                }
+
+                &.prev,
+                &.next {
+                    width: 20px;
+                    height: 11px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                &.prev{
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M1 12L7 6.5L1 1' stroke='%234A352C'/%3E%3C/svg%3E");                }
+
+                &.next {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath d='M7 12L1 6.5L7 1' stroke='%234A352C'/%3E%3C/svg%3E%0A");                }
+            }
+
+            &:first-of-type .current{
+                margin-left: 75.5px;
+            }
+
+            &:last-of-type .current{
+                margin-right: 75.5px;
+            }
+
+            &:first-of-type .prev{
+                margin-right: 40px;
+            }
+
+            &:last-of-type .next{
+                margin-left: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width:991px) {
+    }
+}

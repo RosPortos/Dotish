@@ -1,0 +1,153 @@
+@include('partials/head.html')
+<div class="page-site header--dark">
+	@include('partials/header.html')
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__item">
+                            <a href="#">בית</a>
+                        </div>
+                        <div class="breadcrumbs__item">
+                            <span>מגשי אירוח</span>
+                        </div>
+                    </div>
+                    <h1 class="title">מגשי אירוח</h1>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container">
+                <div class="categories__wrapper">
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-1.png" alt="">
+                        </div>
+                        <div class="item-name">צלחות חמות</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-2.png" alt="">
+                        </div>
+                        <div class="item-name">גבינות ונישנושים</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-3.png" alt="">
+                        </div>
+                        <div class="item-name">כריכונים</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-4.png" alt="">
+                        </div>
+                        <div class="item-name">סלטים</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-5.png" alt="">
+                        </div>
+                        <div class="item-name">דגים ותבשילים</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-6.png" alt="">
+                        </div>
+                        <div class="item-name">פסטות</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-7.png" alt="">
+                        </div>
+                        <div class="item-name">קינוח</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item-img">
+                            <img src="img/category-8.png" alt="">
+                        </div>
+                        <div class="item-name">מאפים ולחמים</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="contact dark-bg">
+            <div class="container">
+                <h2 class="title white-text">
+                    יצירת קשר
+                </h2>
+                <div class="contact__wrapper">
+                    <div class="contact__img">
+                        <img loading="lazy"
+                            src="img/contact-img.jpg"
+                            alt="img">
+                    </div>
+                    <div class="contact__list">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon2.svg"
+                                    alt="img">
+                            </div>
+                            <a href="tel:054-444-2608"
+                                class="contact-item__text">
+                                054-444-2608
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon.svg"
+                                    alt="img">
+                            </div>
+                            <a href="tel:04-649-3344"
+                                class="contact-item__text">
+                                04-649-3344
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon4.svg"
+                                    alt="img">
+                            </div>
+                            <a href="#"
+                                class="contact-item__text">
+                                המלאכה 23, עפולה
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon3.svg"
+                                    alt="img">
+                            </div>
+                            <a href="mailto:orders@dotish.co.il"
+                                class="contact-item__text">
+                                orders@dotish.co.il
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title">
+                    לקוחות ממליצים
+                </h2>
+                <div class="reviews__wrapper">
+                    <img loading="lazy"
+                        src="img/google.png"
+                        alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+	@include('partials/footer.html')
+</div>
+@include('partials/scripts.html')
