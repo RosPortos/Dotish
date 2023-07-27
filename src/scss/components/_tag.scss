@@ -1,0 +1,23 @@
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    flex-wrap: wrap;
+
+    .item {
+        display: grid;
+        grid-template-columns: 14px max-content;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 4px;
+        background-color: #E6DEC9;
+        padding: 2px 13px 2px 15px;
+        height: 29px;
+        color: #332F2D;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1;
+    }
+}
