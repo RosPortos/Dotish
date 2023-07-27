@@ -1,7 +1,7 @@
-.products {
+.products-list {
     margin-bottom: 70px;
 
-    .products__wrapper {
+    .products-list__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 70px 7px;
@@ -100,7 +100,7 @@
             }
         }
 
-        .product-form {
+        .item-form {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
