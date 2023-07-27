@@ -1,6 +1,6 @@
 .pagination {
-    margin-top: 45px;
-    margin-bottom: 83px;
+    margin-top: 70px;
+    margin-bottom: 140px;
     display: flex;
     justify-content: center;
 
@@ -8,25 +8,28 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 306px;
         width: 100%;
 
         li {
             .page-numbers {
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 1.725;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 1.2;
                 display: flex;
                 width: 54px;    
                 height: 54px;
                 align-items: center;
+                text-align: center;
+                justify-content: center;
                 color: #4A352C;
                 cursor: pointer;
-                margin: 0 10px;
+                margin: 0 3px;
+                text-decoration: none;
 
                 &.current,
                 &:hover {
-                    font-weight: 700;
+                    color: #6A3F2D;
+                    background: var(--linear, linear-gradient(180deg, #FAE79F 0%, #DDB97B 52.08%, #C6975A 100%));
                 }
 
                 &.prev,
@@ -49,19 +52,19 @@
             }
 
             &:first-of-type .current{
-                margin-left: 75.5px;
-            }
-
-            &:last-of-type .current{
                 margin-right: 75.5px;
             }
 
+            &:last-of-type .current{
+                margin-left: 75.5px;
+            }
+
             &:first-of-type .prev{
-                margin-right: 40px;
+                margin-left: 20px;
             }
 
             &:last-of-type .next{
-                margin-left: 40px;
+                margin-right: 20px;
             }
         }
     }
