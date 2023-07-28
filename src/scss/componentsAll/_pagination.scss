@@ -70,5 +70,41 @@
     }
 
     @media screen and (max-width:991px) {
+        margin-top: 40px;
+        padding-bottom: 45px;
+    
+        ul {
+    
+            li {
+                .page-numbers {
+                    font-size: 18px;
+                    width: 41px;    
+                    height: 41px;
+                    margin: 0 2px;
+    
+                    &.prev,
+                    &.next {
+                        width: 20px;
+                        height: 11px;
+                    }
+                }
+    
+                &:first-of-type .current{
+                    margin-right: 20px;
+                }
+    
+                &:last-of-type .current{
+                    margin-left: 20px;
+                }
+    
+                &:first-of-type .prev{
+                    margin-left: 20px;
+                }
+    
+                &:last-of-type .next{
+                    margin-right: 20px;
+                }
+            }
+        }
     }
 }
