@@ -5,8 +5,11 @@
 
     &__item {
         display: inline-block;
-        padding-right: 24px;
         position: relative;
+
+        &:not(:first-of-type) {
+            padding-right: 24px;
+        }
 
         a,
         span {
