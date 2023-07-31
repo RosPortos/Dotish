@@ -1,10 +1,10 @@
 .hero {
-    margin-top: 122px;
     padding: 93px 0 80px 0;
     background: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: -1px;
 
     .hero__wrapper {
         display: flex;

@@ -4,13 +4,33 @@
     .products-list__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 70px 7px;
+        grid-gap: 39px 7px;
     }
 
     .item {
         display: flex;
         flex-direction: column;
         position: relative;
+        justify-content: space-between;
+
+        &.active {
+            background: #E6C785;
+            padding: 16px 12px 0 12px;
+            
+            .item-favorite {
+                top: 16px;
+                right: 12px;
+            }
+
+            .item-label {
+                top: 62px;
+                right: 12px;
+            }
+
+            .item-img {
+                max-height: 500px;
+            }
+        }
 
         .item-img {
             max-width: 100%;
@@ -104,6 +124,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            padding-bottom: 31px;
 
             .price {
                 display: flex;
