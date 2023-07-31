@@ -1,0 +1,122 @@
+@include('partials/head.html')
+<div class="page-site header--dark">
+	@include('partials/header.html')
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__item">
+                            <a href="#">בית</a>
+                        </div>
+                        <div class="breadcrumbs__item">
+                            <span>אודות</span>
+                        </div>
+                    </div>
+                    <h1 class="title">אודות</h1>
+                </div>
+            </div>
+        </section>
+        <section class="info-block">
+            <div class="container">
+                <div class="info-block__wrapper">
+                    <div class="info-block__img">
+                        <!-- <img src="img/about.jpg" alt=""> -->
+                        <video poster="img/about.jpg" autoplay muted loop playisline>
+                            <source src="img/about.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="info-block__text">
+                        <h2 class="title">קבוצת גבאי מגישה לכם עם הרבה אהבה, נסיון וקורטוב קסם את קייטרינג הבוטיק דותיש.</h2>
+                        <p>למעלה מעשור אירועים דרך מסעדות ובתי קפה של הקבוצה, נולד קייטרינג הבוטיק דותיש המאגד בתוכו שפים, טעמים, נסיון אדיר בהפקת אירועים, מטבחים שונים ויכולת אמיתית להקפיד על כל הפרטים החשובים ביותר בארועים שלכם. 
+                            מפיקים השקת אירוע? קוקטייל לקוחות? אל תשברו את הראש, תנו לנו ללוות אתכם בהפקה וקולינריה מדוייקת לאירוע שלכם. 
+                        </p>
+                        <p>
+                           מוטו שלנו : האיכות שלנו מתחילה מבחירת חומרי הגלם הטריים, לחמים ומאפים שחום התנור עדיין לא נמוג מרכותם, רטבים סמוקים בטעמי תבלינים שנרקחו בטבע באהבה וידיים מיומנות מלאות בחדוות אהבת הבישול. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact dark-bg">
+            <div class="container">
+                <h2 class="title white-text">
+                    יצירת קשר
+                </h2>
+                <div class="contact__wrapper">
+                    <div class="contact__img">
+                        <video poster="img/contact-img.jpg" autoplay muted loop playisline>
+                            <source src="img/contact.mp4" type="video/mp4">
+                        </video>
+                        <!-- <img loading="lazy"
+                            src="img/contact-img.jpg"
+                            alt="img"> -->
+                    </div>
+                    <div class="contact__list">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon2.svg"
+                                    alt="img">
+                            </div>
+                            <a href="tel:054-444-2608"
+                                class="contact-item__text">
+                                054-444-2608
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon.svg"
+                                    alt="img">
+                            </div>
+                            <a href="tel:04-649-3344"
+                                class="contact-item__text">
+                                04-649-3344
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon4.svg"
+                                    alt="img">
+                            </div>
+                            <a href="#"
+                                class="contact-item__text">
+                                המלאכה 23, עפולה
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon3.svg"
+                                    alt="img">
+                            </div>
+                            <a href="mailto:orders@dotish.co.il"
+                                class="contact-item__text">
+                                orders@dotish.co.il
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title">
+                    לקוחות ממליצים
+                </h2>
+                <div class="reviews__wrapper">
+                    <img loading="lazy"
+                        src="img/google.png"
+                        alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+	@include('partials/footer.html')
+</div>
+@include('partials/scripts.html')

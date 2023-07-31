@@ -11,6 +11,9 @@
 @import "header";
 @import "footer";
 
+@import "./componentsAll/breadcrumbs";
+@import "./componentsAll/pagination";
+
 @import "./components/promo";
 @import "./components/about";
 @import "./components/card-slider";
@@ -18,3 +21,15 @@
 @import "./components/contact";
 @import "./components/instagram";
 @import "./components/reviews";
+@import "./components/hero";
+@import "./components/categories";
+@import "./components/categories-section";
+@import "./components/products-list";
+@import "./components/info-block";
+@import "./components/blog";
+@import "./components/tag";
+@import "./components/recommendations";
+@import "./components/page-404";
+
+
+@import "./common/typography";

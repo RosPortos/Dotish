@@ -1,0 +1,119 @@
+@include('partials/head.html')
+<div class="page-site header--dark">
+	@include('partials/header.html')
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__item">
+                            <a href="#">בית</a>
+                        </div>
+                        <div class="breadcrumbs__item">
+                            <span>כשרות</span>
+                        </div>
+                    </div>
+                    <h1 class="title">כשרות</h1>
+                </div>
+            </div>
+        </section>
+        <section class="info-block">
+            <div class="container">
+                <div class="info-block__wrapper">
+                    <!-- <a class="info-block__img" href="img/kosher.jpg" data-fancybox="gallery">
+                        <img src="img/kosher.jpg" alt="">
+                    </a> -->
+                    <div class="info-block__img">
+                        <video src=""></video>
+                    </div>
+                    <div class="info-block__text">
+                        <h2 class="title">תעודות כשרות מובילות למסעדתנו</h2>
+                        <p>כדי לענות לצרכי הלקוחות שלנו ולספק את ההמתנה הגבוהה ביותר שלהם, אנו משתמשים בחומרי גלם איכותיים ומובחרים בלבד. אנו מבצעים בדיקות מדעיות והבדלות טעמים לפני שאנו מציעים מנות חדשות לתפריט שלנו, כדי לוודא שהמזון שלנו תמיד משתייך לאיכות הטובה ביותר. במסעדתנו אנו מתמחים במגוון של מנות, כולל טבעוני, צמחוני, כשר ולא כשר, כדי שכל לקוח יוכל למצוא משהו שמתאים לטעמו ולצרכיו. בנוסף, אנו שואפים ליצור חוויה מפנקת למבקרים שלנו, ולכן יש לנו מספיק מקום לאורחים בכל רגע נתון.
+                        </p>
+                        <p>תוך שמירה על מסגרת נקייה וסדירה בכל זמן נתון, מסעדתנו מתחייבת להציע לכל אורח חווית אכילה בעלת תקציב מתאים ומותאמת לצרכיו, על מנת לייצר זיכרון משמעותי ונפלא לכולם.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact dark-bg">
+            <div class="container">
+                <h2 class="title white-text">
+                    יצירת קשר
+                </h2>
+                <div class="contact__wrapper">
+                    <div class="contact__img">
+                        <!-- <img loading="lazy"
+                            src="img/contact-img.jpg"
+                            alt="img"> -->
+                        <video poster="img/contact-img.jpg" autoplay muted loop playisline>
+                            <source src="img/contact.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="contact__list">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon2.svg"
+                                    alt="img">
+                            </div>
+                            <a href="tel:054-444-2608"
+                                class="contact-item__text">
+                                054-444-2608
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon.svg"
+                                    alt="img">
+                            </div>
+                            <a href="tel:04-649-3344"
+                                class="contact-item__text">
+                                04-649-3344
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon4.svg"
+                                    alt="img">
+                            </div>
+                            <a href="#"
+                                class="contact-item__text">
+                                המלאכה 23, עפולה
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img loading="lazy"
+                                    src="img/contact-item-icon3.svg"
+                                    alt="img">
+                            </div>
+                            <a href="mailto:orders@dotish.co.il"
+                                class="contact-item__text">
+                                orders@dotish.co.il
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title">
+                    לקוחות ממליצים
+                </h2>
+                <div class="reviews__wrapper">
+                    <img loading="lazy"
+                        src="img/google.png"
+                        alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+	@include('partials/footer.html')
+</div>
+@include('partials/scripts.html')

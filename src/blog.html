@@ -1,0 +1,362 @@
+@include('partials/head.html')
+<div class="page-site header--dark">
+	@include('partials/header.html')
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__item">
+                            <a href="#">בית</a>
+                        </div>
+                        <div class="breadcrumbs__item">
+                            <span>בלוג</span>
+                        </div>
+                    </div>
+                    <h1 class="title">בלוג</h1>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="blog-wrapper">
+                    <aside class="blog-aside">
+                        <div class="category-list">
+                            <div class="title-sm">קטגוריות</div>
+                            <ul>
+                                <li>
+                                    <a class="item" href="">מועיל
+                                        <span>(12)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item" href="">אירועים
+                                        <span>(10)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item" href="">מתכונים
+                                        <span>(21)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item" href="">עצה
+                                        <span>(36)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item" href="">הדשות
+                                        <span>(18)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside-newsletter">
+                            <div class="title-sm">ניוזלטר</div>
+                            <div class="subtitle">הזן את כתובת הדוא"ל שלך למטה כדי להירשם לניוזלטר שלנו</div>
+                            <form action="">
+                                <div class="form-fields">
+                                    <div class="input-field">
+                                        <div class="wpcf7-form-control-wrap">
+                                            <input type="text" placeholder="*כתובת אימייל">
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <button class="btn btn--orange">הירשם</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="recent-posts">
+                            <div class="title-sm">פוסטים אחרונים</div>
+                            <a href="#" class="recent-posts-item">
+                                <div class="recent-posts-item__img">
+                                    <img src="img/recent-1.jpg" alt="">
+                                </div>
+                                <div class="recent-posts-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-posts-item__title">פסטה טרייה ועוגיות...</div>
+                                </div>
+                            </a>
+                            <a href="#" class="recent-posts-item">
+                                <div class="recent-posts-item__img">
+                                    <img src="img/recent-2.jpg" alt="">
+                                </div>
+                                <div class="recent-posts-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-posts-item__title">פסטה טרייה ועוגיות...</div>
+                                </div>
+                            </a>
+                            <a href="#" class="recent-posts-item">
+                                <div class="recent-posts-item__img">
+                                    <img src="img/recent-3.jpg" alt="">
+                                </div>
+                                <div class="recent-posts-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-posts-item__title">פסטה טרייה ועוגיות...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </aside>
+                    <div class="blog-main">
+                        <div class="blog-main-wrapper">
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-1.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">פסטה טרייה ועוגיות חמה</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-2.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">קוסטה ריקה עם אגוזי מלך וגבינת פטה...</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>    
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-3.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">פסטה טרייה ועוגיות חמה</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-4.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">פסטה טרייה ועוגיות חמה</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-5.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">קוסטה ריקה עם אגוזי מלך וגבינת פטה...</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>    
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-6.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">פסטה טרייה ועוגיות חמה</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-7.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">פסטה טרייה ועוגיות חמה</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-8.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">קוסטה ריקה עם אגוזי מלך וגבינת פטה...</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>    
+                                </div>
+                            </a>
+                            <a href="#" class="blog-item">
+                                <div class="blog-item__img">
+                                    <img src="img/blog-9.jpg" alt="">
+                                </div>
+                                <div class="blog-item__info">
+                                    <div class="tag">
+                                        <div class="item">
+                                            <img src="img/eye-tag.svg" class="item-icon" alt="">
+                                            <span>3215</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/event-tag.svg" class="item-icon" alt="">
+                                            <span>23 בספטמבר 2023</span>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/price-tag.svg" class="item-icon" alt="">
+                                            <span>מועיל</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-sm">פסטה טרייה ועוגיות חמה</div>
+                                    <div class="subtitle">חושף את סודות המטבח האיטלקי"למה לצאת מהבית כשאתם יכולים לאפשר לעצמכם חוויה איטלקית מושלמת עם פסטה טרייה ועוגיות חמות במרקם מושלם?</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pagination">
+                            <ul class="page-numbers">
+                                <li>
+                                    <a href="" class="prev page-numbers"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="page-numbers">1</a>
+                                </li>
+                                <li>
+                                    <span class="page-numbers current">2</a>
+                                </li>
+                                <li>
+                                    <span class="page-numbers">3</a>
+                                </li>
+                                <li>
+                                    <span class="page-numbers">...</a>
+                                </li>
+                                <li>
+                                    <span class="page-numbers">14</a>
+                                </li>
+                                <li>
+                                    <span class="page-numbers">15</a>
+                                </li>
+                                <li>
+                                    <a href="" class="next page-numbers"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+	@include('partials/footer.html')
+</div>
+@include('partials/scripts.html')

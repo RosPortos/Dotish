@@ -1,0 +1,99 @@
+.categories-section {
+    margin-top: 58px;
+
+    .categories-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1700px;
+        margin: 0 auto;
+        border-bottom: 2px solid #E6DEC9;
+        margin-bottom: 76px;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            gap: 15px;
+            text-decoration-color: transparent;
+            padding: 28px 30px 15px 30px;
+            color: #BBAB81;
+            position: relative;
+            z-index: 1;
+            transition: all .3s;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #EAE8D6;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: #E6C785;
+                box-shadow: 0px 8px 29px -5px rgba(0, 0, 0, 0.15);
+                z-index: -1;
+                bottom: -2px;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            &:hover {
+                color: #6A3F2D;
+                .item-icon {
+                    filter: brightness(0) saturate(100%) invert(24%) sepia(18%) saturate(1479%) hue-rotate(332deg) brightness(96%) contrast(87%);
+                }
+
+                &::after,
+                &::before {
+                    opacity: 1;
+                }
+            }
+
+            &.active {
+                color: #6A3F2D;
+                .item-icon {
+                    filter: brightness(0) saturate(100%) invert(24%) sepia(18%) saturate(1479%) hue-rotate(332deg) brightness(96%) contrast(87%);
+                }
+
+                &::after,
+                &::before {
+                    opacity: 1;
+                }
+            }
+
+            .item-icon {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+
+            .item-title {
+                text-align: center;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%;
+            }
+        }
+    }
+}
