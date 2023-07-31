@@ -1,0 +1,288 @@
+@include('partials/head.html')
+<div class="page-site page-site--not-main">
+    @include('partials/header.html')
+
+    <section class="product-page">
+        <div class="container product-page__wrapper">
+            <div class="product-page__img">
+                <!-- add class '.favorite-active' -->
+                <button class="product-page__favorite"></button>
+                <div class="stickers">
+                    <div class="sticker--vegan">
+                        טבעוני
+                    </div>
+                </div>
+                <img loading="lazy"
+                    src="img/product-img2.jpg"
+                    alt="img">
+            </div>
+            <div class="product-page__info">
+                <h1 class="product-page__title">
+                    בראנץ' בוקר
+                </h1>
+                <div class="product-page__price">
+                    <span class="price--new">
+                        2150 ₪
+                    </span>
+                </div>
+                <div class="product-page__description">
+                    לורם איפסום הוא טקסט דמי שמשמש בתעשיית הדפוס והעיצוב כתקן להמחשת הפריסה ולמילוי חללים בצורה זמנית.
+                    הוא נוצר בשנת 1500 על ידי הדפס חיפוש מסוים, ואין לו משמעות אמיתית בשפה הלטינית. הלורם איפסום נכתב
+                    בצורה של פסקה רצופה בלי רווחים בין המילים והוא נעשה בשימוש נרחב על מנת למקם עיצובי בפריסת העיתון או
+                    המגזין. ישנן גרסאות רבות עם שינויים קלים בטקסט על מנת ליצור מראה מגוון. לורם איפסום הוא טקסט דמי
+                    שמשמש בתעשיית הדפוס והעיצוב כתקן להמחשת הפריסה ולמילוי חללים בצורה זמנית. ישנן גרסאות רבות עם
+                    שינויים קלים בטקסט על מנת ליצור מראה מגוון
+                </div>
+                <div class="product-page__ingredients">
+                    <div class="product-page-row-title">
+                        מצרכים:
+                    </div>
+                    <ul class="ingredients__list">
+                        <li>פסטה</li>
+                        <li>ביצים</li>
+                        <li>פטרוזיליה טרייה</li>
+                        <li>תבלינים</li>
+                        <li>בצל קטן</li>
+                        <li>מיץ לימון</li>
+                        <li>מיץ לימון</li>
+                        <li>מיץ לימון</li>
+                    </ul>
+                </div>
+                <div class="product-page__bottom">
+                    <div class="product-page-size">
+                        <div class="product-page-row-title">
+                            מצרכים:
+                        </div>
+                        <ul class="product-page-size__wrapper">
+                            <li class="product-page-size-item">
+                                <label>
+                                    <input checked
+                                        type="radio"
+                                        name="product-size">
+                                    <span>150 גרם</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-page__quantity">
+                        <div class="product-page-row-title">
+                            כמות:
+                        </div>
+                        <div class="quantity">
+                            <div class="quantity-minus">
+                                -
+                            </div>
+                            <input type="number"
+                                value="4">
+                            <div class="quantity-plus">
+                                +
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-page__btns">
+                        <button class="btn btn--orange btn--basket">
+                            להוסיף לסל
+                        </button>
+                        <div class="product-page__sum">
+                            <p>סה"כ:</p>
+                            8600 ₪
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="title">
+                הלקוחות שלנו אוהבים אותנו כי:
+            </h2>
+            <div class="advantages__wrapper">
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item4.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        רק מרכיבים טריים
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item3.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        מחירים תחרותיים
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item2.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        משולחים מהירים
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        מבחר רחב
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slider-wrapper">
+        <section class="card-slider card-slider--category">
+            <div class="container">
+                <h2 class="title white-text">
+                    קטגוריות מגשי אירוח
+                </h2>
+                <div class="card-slider__wrapper">
+                    <div class="swiper card-slider-swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    קינוח
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img2.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    כריכונים
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img3.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    מאפים ולחמים
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img4.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    צלחות חמות
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <a href="#"
+                    class="card-slider__btn btn btn--orange">
+                    כל המגשים
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact dark-bg">
+        <div class="container">
+            <h2 class="title white-text">
+                יצירת קשר
+            </h2>
+            <div class="contact__wrapper">
+                <div class="contact__img">
+                    <img loading="lazy"
+                        src="img/contact-img.jpg"
+                        alt="img">
+                </div>
+                <div class="contact__list">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon2.svg"
+                                alt="img">
+                        </div>
+                        <a href="tel:054-444-2608"
+                            class="contact-item__text">
+                            054-444-2608
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon.svg"
+                                alt="img">
+                        </div>
+                        <a href="tel:04-649-3344"
+                            class="contact-item__text">
+                            04-649-3344
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon4.svg"
+                                alt="img">
+                        </div>
+                        <a href="#"
+                            class="contact-item__text">
+                            המלאכה 23, עפולה
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon3.svg"
+                                alt="img">
+                        </div>
+                        <a href="mailto:orders@dotish.co.il"
+                            class="contact-item__text">
+                            orders@dotish.co.il
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="title">
+                לקוחות ממליצים
+            </h2>
+            <div class="reviews__wrapper">
+                <img loading="lazy"
+                    src="img/google.png"
+                    alt="img">
+            </div>
+        </div>
+    </section>
+
+    @include('partials/footer.html')
+</div>
+@include('partials/scripts.html')

@@ -1,6 +1,7 @@
 @mixin scroll-hide {
     scrollbar-width: none;
     -ms-overflow-style: none;
+
     &::-webkit-scrollbar {
         width: 0;
         height: 0;
@@ -8,15 +9,16 @@
 }
 
 @mixin list-scroll {
-    scrollbar-color: #222332 #fff;
     &::-webkit-scrollbar-track {
         background-color: transparent;
     }
+
     &::-webkit-scrollbar {
-        height: 10px;
-        background-color: #FFF;
+        width: 5px;
+        background-color: transparent;
     }
+
     &::-webkit-scrollbar-thumb {
-        background: #696969;
+        background: #CE931A;
     }
 }

@@ -1,0 +1,271 @@
+@include('partials/head.html')
+<div class="page-site page-site--not-main">
+    @include('partials/header.html')
+
+    <section class="product-page product-page--sing-menu">
+        <div class="container product-page__wrapper">
+            <div class="product-page__img">
+                <!-- add class '.favorite-active' -->
+                <button class="product-page__favorite"></button>
+                <div class="stickers">
+                    <div class="sticker--vegan">
+                        טבעוני
+                    </div>
+                </div>
+                <img loading="lazy"
+                    src="img/product-img3.jpg"
+                    alt="img">
+            </div>
+            <div class="product-page__info">
+                <h1 class="product-page__title">
+                    תפריט בוקר 50 עד 60 אנשים
+                </h1>
+                <div class="product-page__price">
+                    <span class="price--new">
+                        6000 ₪
+                    </span>
+                </div>
+                <div class="product-page__ingredients">
+                    <div class="product-page-row-title">
+                        מה בתפריט:
+                    </div>
+                    <ul class="ingredients__list">
+                        <li>טורטייה פלאפל</li>
+                        <li> טורטייה אבוקדו</li>
+                        <li>30 לביבות ברוקולי</li>
+                        <li>1 סלט בריאות קינואה</li>
+                        <li>1 סלט פנצנלה</li>
+                        <li>1 לחם דגנים</li>
+                        <li>50 מיני מיקס מתוקים</li>
+                        <li>טורטייה פטריות</li>
+                        <li>פריקסה</li>
+                        <li>2 שקשוקה ישראלית</li>
+                        <li>1 סלט ירוקים</li>
+                        <li>1 אנטיפסטי</li>
+                        <li>5 פוקאצ’ה</li>
+                        <li>20 מוסים בכוסות מבחר טעמים</li>
+                        <li>טורטייה פלאפל</li>
+                        <li> טורטייה אבוקדו</li>
+                        <li>30 לביבות ברוקולי</li>
+                        <li>1 סלט בריאות קינואה</li>
+                        <li>1 סלט פנצנלה</li>
+                        <li>1 לחם דגנים</li>
+                        <li>50 מיני מיקס מתוקים</li>
+                        <li>טורטייה פטריות</li>
+                        <li>פריקסה</li>
+                        <li>2 שקשוקה ישראלית</li>
+                        <li>1 סלט ירוקים</li>
+                        <li>1 אנטיפסטי</li>
+                        <li>5 פוקאצ’ה</li>
+                        <li>20 מוסים בכוסות מבחר טעמים</li>
+                    </ul>
+                </div>
+                <div class="product-page__bottom">
+                    <div class="product-page__btns">
+                        <button class="btn btn--orange btn--basket">
+                            להוסיף לסל
+                        </button>
+                        <ul class="product-page__bottom-list">
+                            <li>המחיר כולל כלי הגשה למנות הנדרשות בלבד</li>
+                            <li>המחיר אינו כולל הובלה.</li>
+                            <li>עלות תפריט כולל מע"מ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="title">
+                הלקוחות שלנו אוהבים אותנו כי:
+            </h2>
+            <div class="advantages__wrapper">
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item4.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        רק מרכיבים טריים
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item3.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        מחירים תחרותיים
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item2.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        משולחים מהירים
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon">
+                        <img loading="lazy"
+                            src="img/advantages-item.svg"
+                            alt="img">
+                    </div>
+                    <div class="advantages-item__text">
+                        מבחר רחב
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slider-wrapper">
+        <section class="card-slider card-slider--category">
+            <div class="container">
+                <h2 class="title white-text">
+                    קטגוריות מגשי אירוח
+                </h2>
+                <div class="card-slider__wrapper">
+                    <div class="swiper card-slider-swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    קינוח
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img2.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    כריכונים
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img3.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    מאפים ולחמים
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="swiper-slide category-slide">
+                                <div class="category-slide__img">
+                                    <img loading="lazy"
+                                        src="img/category-img4.jpg"
+                                        alt="img">
+                                </div>
+                                <div class="category-slide__title">
+                                    צלחות חמות
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <a href="#"
+                    class="card-slider__btn btn btn--orange">
+                    כל המגשים
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact dark-bg">
+        <div class="container">
+            <h2 class="title white-text">
+                יצירת קשר
+            </h2>
+            <div class="contact__wrapper">
+                <div class="contact__img">
+                    <img loading="lazy"
+                        src="img/contact-img.jpg"
+                        alt="img">
+                </div>
+                <div class="contact__list">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon2.svg"
+                                alt="img">
+                        </div>
+                        <a href="tel:054-444-2608"
+                            class="contact-item__text">
+                            054-444-2608
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon.svg"
+                                alt="img">
+                        </div>
+                        <a href="tel:04-649-3344"
+                            class="contact-item__text">
+                            04-649-3344
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon4.svg"
+                                alt="img">
+                        </div>
+                        <a href="#"
+                            class="contact-item__text">
+                            המלאכה 23, עפולה
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <img loading="lazy"
+                                src="img/contact-item-icon3.svg"
+                                alt="img">
+                        </div>
+                        <a href="mailto:orders@dotish.co.il"
+                            class="contact-item__text">
+                            orders@dotish.co.il
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="title">
+                לקוחות ממליצים
+            </h2>
+            <div class="reviews__wrapper">
+                <img loading="lazy"
+                    src="img/google.png"
+                    alt="img">
+            </div>
+        </div>
+    </section>
+
+    @include('partials/footer.html')
+</div>
+@include('partials/scripts.html')

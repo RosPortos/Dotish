@@ -1,0 +1,20 @@
+@mixin hover-btn {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 200%;
+        height: 16px;
+        background: #fae79f;
+        right: -150%;
+        transform: rotate(-30deg);
+        transition: right 0.3s linear;
+    }
+
+    &:hover {
+        &::after {
+            right: 150%;
+        }
+    }
+}

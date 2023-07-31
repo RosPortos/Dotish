@@ -1,6 +1,26 @@
 <header class="header">
     <div class="container header__wrapper">
-        <div class="search"></div>
+        <div class="search-trigger"></div>
+        <div class="search-modal">
+            <form action="#"
+                class="search-modal__form">
+                <input type="text"
+                    class="search-modal__input"
+                    placeholder="חפש מוצרים...">
+                <button type="submit"
+                    class="search-modal__submit">
+                </button>
+            </form>
+
+            <ul class="search-modal__list">
+                <li><a href="#">ספגטי בשר מפורק</a></li>
+                <li><a href="#">ספגטי בשר מפורק</a></li>
+                <li><a href="#">ספגטי בשר מפורק</a></li>
+                <li><a href="#">ספגטי בשר מפורק</a></li>
+                <li><a href="#">ספגטי בשר מפורק</a></li>
+                <li><a href="#">ספגטי בשר מפורק</a></li>
+            </ul>
+        </div>
         <a href="#"
             class="header__logo">
             <img src="img/logo.svg"
@@ -8,8 +28,55 @@
         </a>
         <nav class="nav">
             <ul>
-                <li>
+                <li class="menu-item-has-children">
                     <a href="#">מגשי אירוח</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <img src="img/menu-icon.svg"
+                                alt="img">
+                            <a href="#">הכל</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon2.svg"
+                                alt="img">
+                            <a href="#">כריכונים</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon3.svg"
+                                alt="img">
+                            <a href="#">פסטות</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon4.svg"
+                                alt="img">
+                            <a href="#">צלחות חמות</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon5.svg"
+                                alt="img">
+                            <a href="#">סלטים</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon6.svg"
+                                alt="img">
+                            <a href="#">קינוח</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon7.svg"
+                                alt="img">
+                            <a href="#">גבינות ונישנושים</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon8.svg"
+                                alt="img">
+                            <a href="#">דגים ותבשילים</a>
+                        </li>
+                        <li>
+                            <img src="img/menu-icon9.svg"
+                                alt="img">
+                            <a href="#">הכל</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">ארוחות בוקר</a>
@@ -34,13 +101,394 @@
                 </li>
             </ul>
         </nav>
-        <a href="#"
-            class="header__favorite"></a>
+        <div class="header__favorite">
+            <span class="circle-num">11</span>
+            <div class="basket-modal basket-modal--favorite">
+                <ul class="basket-modal__list">
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        <span class="old-price">200 ₪</span> 150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                    <li class="basket-modal-item">
+                        <div class="basket-modal-item__close"></div>
+                        <div class="basket-modal-item__right">
+                            <div class="basket-modal-item__img">
+                                <img src="img/basket-img.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="basket-modal-item__info">
+                                <div class="basket-modal-item__title">
+                                    ספגטי בולונז
+                                </div>
+                                <div class="basket-modal-item__characteristic">
+                                    <div class="basket-modal-item__price">
+                                        150 ₪
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__left">
+                            <button class="favorite-modal-item__btn"></button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="basket-modal__bottom">
+                    <button class="basket-modal__clean">
+                        ניקוי עגלה
+                    </button>
+                    <div class="basket-modal__total">
+                        <span class="basket-modal__total--title">
+                            סה"כ:
+                        </span>
+                        3000 ₪
+                    </div>
+                    <button class="basket-modal__btn btn btn--orange">
+                        לבדוק
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="basket">
             <div class="basket-icon">
-                <span class="basket__num">3</span>
+                <span class="circle-num">3</span>
             </div>
             ההזמנה שלי
+        </div>
+        <div class="basket-modal basket-modal--order">
+            <ul class="basket-modal__list">
+                <li class="basket-modal-item">
+                    <div class="basket-modal-item__close"></div>
+                    <div class="basket-modal-item__right">
+                        <div class="basket-modal-item__img">
+                            <img src="img/basket-img.jpg"
+                                alt="img">
+                        </div>
+                        <div class="basket-modal-item__info">
+                            <div class="basket-modal-item__title">
+                                ספגטי בולונז
+                            </div>
+                            <div class="basket-modal-item__characteristic">
+                                <div class="basket-modal-item__price">
+                                    150 ₪
+                                </div>
+                                <div class="basket-modal-item__weight">
+                                    250 גרם
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-modal-item__left">
+                        <div class="quantity">
+                            <div class="quantity-minus">
+                                -
+                            </div>
+                            <input type="number"
+                                value="4">
+                            <div class="quantity-plus">
+                                +
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__sum">
+                            <span class="basket-modal-item__sum--title">סך הכל</span>
+                            600 ₪
+                        </div>
+                    </div>
+                </li>
+                <li class="basket-modal-item">
+                    <div class="basket-modal-item__close"></div>
+                    <div class="basket-modal-item__right">
+                        <div class="basket-modal-item__img">
+                            <img src="img/basket-img2.jpg"
+                                alt="img">
+                        </div>
+                        <div class="basket-modal-item__info">
+                            <div class="basket-modal-item__title">
+                                ספגטי בולונז
+                            </div>
+                            <div class="basket-modal-item__characteristic">
+                                <div class="basket-modal-item__price">
+                                    150 ₪
+                                </div>
+                                <div class="basket-modal-item__weight">
+                                    250 גרם
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-modal-item__left">
+                        <div class="quantity">
+                            <div class="quantity-minus">
+                                -
+                            </div>
+                            <input type="number"
+                                value="4">
+                            <div class="quantity-plus">
+                                +
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__sum">
+                            <span class="basket-modal-item__sum--title">סך הכל</span>
+                            600 ₪
+                        </div>
+                    </div>
+                </li>
+                <li class="basket-modal-item">
+                    <div class="basket-modal-item__close"></div>
+                    <div class="basket-modal-item__right">
+                        <div class="basket-modal-item__img">
+                            <img src="img/basket-img3.jpg"
+                                alt="img">
+                        </div>
+                        <div class="basket-modal-item__info">
+                            <div class="basket-modal-item__title">
+                                ספגטי בולונז
+                            </div>
+                            <div class="basket-modal-item__characteristic">
+                                <div class="basket-modal-item__price">
+                                    150 ₪
+                                </div>
+                                <div class="basket-modal-item__weight">
+                                    250 גרם
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-modal-item__left">
+                        <div class="quantity">
+                            <div class="quantity-minus">
+                                -
+                            </div>
+                            <input type="number"
+                                value="4">
+                            <div class="quantity-plus">
+                                +
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__sum">
+                            <span class="basket-modal-item__sum--title">סך הכל</span>
+                            600 ₪
+                        </div>
+                    </div>
+                </li>
+                <li class="basket-modal-item">
+                    <div class="basket-modal-item__close"></div>
+                    <div class="basket-modal-item__right">
+                        <div class="basket-modal-item__img">
+                            <img src="img/basket-img4.jpg"
+                                alt="img">
+                        </div>
+                        <div class="basket-modal-item__info">
+                            <div class="basket-modal-item__title">
+                                ספגטי בולונז
+                            </div>
+                            <div class="basket-modal-item__characteristic">
+                                <div class="basket-modal-item__price">
+                                    150 ₪
+                                </div>
+                                <div class="basket-modal-item__weight">
+                                    250 גרם
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-modal-item__left">
+                        <div class="quantity">
+                            <div class="quantity-minus">
+                                -
+                            </div>
+                            <input type="number"
+                                value="4">
+                            <div class="quantity-plus">
+                                +
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__sum">
+                            <span class="basket-modal-item__sum--title">סך הכל</span>
+                            600 ₪
+                        </div>
+                    </div>
+                </li>
+                <li class="basket-modal-item">
+                    <div class="basket-modal-item__close"></div>
+                    <div class="basket-modal-item__right">
+                        <div class="basket-modal-item__img">
+                            <img src="img/basket-img.jpg"
+                                alt="img">
+                        </div>
+                        <div class="basket-modal-item__info">
+                            <div class="basket-modal-item__title">
+                                ספגטי בולונז
+                            </div>
+                            <div class="basket-modal-item__characteristic">
+                                <div class="basket-modal-item__price">
+                                    150 ₪
+                                </div>
+                                <div class="basket-modal-item__weight">
+                                    250 גרם
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-modal-item__left">
+                        <div class="quantity">
+                            <div class="quantity-minus">
+                                -
+                            </div>
+                            <input type="number"
+                                value="4">
+                            <div class="quantity-plus">
+                                +
+                            </div>
+                        </div>
+                        <div class="basket-modal-item__sum">
+                            <span class="basket-modal-item__sum--title">סך הכל</span>
+                            600 ₪
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="basket-modal__bottom">
+                <button class="basket-modal__clean">
+                    ניקוי עגלה
+                </button>
+                <div class="basket-modal__total">
+                    <span class="basket-modal__total--title">
+                        סה"כ:
+                    </span>
+                    3000 ₪
+                </div>
+                <button class="basket-modal__btn btn btn--orange">
+                    לבדוק
+                </button>
+            </div>
         </div>
     </div>
 </header>

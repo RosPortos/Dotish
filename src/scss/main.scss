@@ -1,7 +1,7 @@
 // базовые подключения
+@import "./common/mixins";
 @import "./common/button";
 @import "./common/vars";
-@import "./common/mixins";
 @import "./common/fonts";
 @import "./common/null";
 
@@ -10,6 +10,10 @@
 // подключения компонентов страницы
 @import "header";
 @import "footer";
+
+@import "./components/quantity";
+@import "./components/product-page";
+@import "./components/advantages";
 
 @import "./components/promo";
 @import "./components/about";

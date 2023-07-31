@@ -1,7 +1,5 @@
 .promo {
     position: relative;
-    padding-top: 50px;
-    position: relative;
     &::before {
         position: absolute;
         content: "";
@@ -32,7 +30,7 @@
 }
 
 .promo__wrapper {
-    padding: 200px 0;
+    padding: 330px 0 270px;
 }
 
 .promo__offer {
@@ -48,7 +46,6 @@
     color: #fff;
     font-size: 130px;
     font-weight: 700;
-    margin-top: 40px;
 }
 .promo__descr {
     color: #fff;
