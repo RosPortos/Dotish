@@ -58,6 +58,39 @@
     }
 }
 
+.page-site--not-menu {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+
+    .search-trigger,
+    .search-modal,
+    nav,
+    .header__favorite,
+    .basket,
+    .basket-modal{
+        display: none;
+    }
+
+    .header {
+        background: #0A0A0A;
+    }
+
+    .header__wrapper {
+        padding: 61px 15px;
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+
+    .main {
+        background: #E5DDC8;
+
+    }
+    
+}
+
 .header__wrapper {
     display: flex;
     justify-content: space-between;
