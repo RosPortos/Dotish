@@ -17,10 +17,20 @@ body {
     padding: 0 15px;
 }
 
+.container-small {
+    max-width: 965px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .page-site {
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+}
+
+.main {
+    background: #EEEAE1;
 }
 
 .pd-sec {

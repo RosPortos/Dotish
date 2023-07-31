@@ -19,11 +19,16 @@
     }
 }
 
+section.text {
+    padding: 140px 0;
+    background-color: #F3F2E4;
+}
+
 .text {
     font-weight: 400;
     font-size: 24px;
     line-height: 1.2;
-    color: #3E3E3E;
+    color: #332F2D;
 
     *:not(img, ul, ol, li, blockquote) {
         margin-bottom: 30px;
@@ -41,23 +46,21 @@
     h6 {
         font-weight: 700;
         line-height: 1.2;
-        color: inherit;
+        color: #332F2D;
     }
 
-    h1 {
+    h1, h2 {
         font-size: 80px;
-    }
-
-    h2 {
-        font-size: 65px;
+        margin-left: 19px;
     }
 
     h3 {
         font-size: 45px;
+        margin-bottom: 30px;
     }
 
-    h4 {
-        font-size: 36px;
+    h4, h5 {
+        font-size: 32px;
     }
 
     h5,
@@ -65,13 +68,18 @@
         font-size: 27px;
     }
 
+    strong, b {
+        font-weight: 700;
+        color: #332F2D;
+    }
+
     a {
-        color: #1AACFF;
+        color: #DF9F1A;
         text-decoration: underline;
     }
 
     blockquote {
-        background: #3399FF;
+        background: #E5DDC8;
         border-radius: 15px;
         font-weight: 400;
         font-size: 24px;
@@ -102,16 +110,17 @@
         max-width: 100%;
         height: auto;
         object-fit: contain;
+        margin: 50px 0;
     }
 
     .alignleft {
         float: left;
-        margin-right: 40px;
+        margin-right: 8px;
     }
 
     .alignright {
         float: right;
-        margin-left: 40px;
+        margin-left: 8px;
     }
 
     .aligncenter {
@@ -119,20 +128,23 @@
     }
 
     ul {
+        margin-bottom: 28px;
+
         li {
             padding-right: 16px;
             position: relative;
             z-index: 2;
+            color: #696766;
 
             &::after {
                 content: "";
                 position: absolute;
                 top: 12px;
                 right: 0;
-                width: 5px;
-                height: 5px;
+                width: 6px;
+                height: 6px;
                 border-radius: 50%;
-                background-color: #3E3E3E;
+                border: 1px solid #696766;
             }
 
             ol {
@@ -140,6 +152,7 @@
 
                 li {
                     padding-right: 0;
+                    color: #696766;
 
                     &::after {
                         display: none;
@@ -151,7 +164,7 @@
                         font-weight: 400;
                         font-size: 24px;
                         line-height: 1.2;
-                        color: #3E3E3E;
+                        color: #696766;
                     }
                 }
             }
@@ -160,15 +173,24 @@
 
     ol {
         counter-reset: numOl;
+        margin-bottom: 28px;
 
         li {
+            list-style-type: none;
+            color: #696766;
+            padding-right: 25px;
+            position: relative;
+
             &::before {
                 counter-increment: numOl;
                 content: counters(numOl, '.') '.';
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 1.2;
-                color: #3E3E3E;
+                color: #696766;
+                padding-left: 16px;
+                position: absolute;
+                right: 0;
             }
 
             ol {
@@ -200,6 +222,10 @@
                 }
             }
         }
+    }
+
+    p {
+        color: #696766;
     }
 }
 

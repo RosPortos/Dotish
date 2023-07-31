@@ -1,0 +1,49 @@
+.page-404 {
+    padding: 183px 0 183px 0;
+
+    .title {
+        margin-bottom: 50px;
+        font-size: 130px;
+        line-height: 1;
+        color: #332F2D;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 43px;
+
+        &__item {
+            span {
+                color: #9D9D9D;
+            }
+    
+            a {
+                color: #332F2D;
+            }
+    
+            &::before {
+                color: #332F2D;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        .btn {
+            padding: 10px 20px 3px 20px;
+            min-width: 130px;
+            min-height: 41px;
+            text-align: center;
+        }
+    }
+}
