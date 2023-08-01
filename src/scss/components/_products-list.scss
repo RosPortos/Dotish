@@ -1,10 +1,11 @@
 .products-list {
-    margin-bottom: 70px;
+    margin-bottom: 3.646vw;
+    padding-top: 3.958vw;
 
     .products-list__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 39px 7px;
+        grid-gap: 2.031vw 0.365vw;
     }
 
     .item {
@@ -15,20 +16,20 @@
 
         &.active {
             background: #E6C785;
-            padding: 16px 12px 0 12px;
+            padding: 0.833vw 0.625vw 0 0.625vw;
             
             .item-favorite {
-                top: 16px;
-                right: 12px;
+                top: 0.833vw;
+                right: 0.625vw;
             }
 
             .item-label {
-                top: 62px;
-                right: 12px;
+                top: 3.229vw;
+                right: 0.625vw;
             }
 
             .item-img {
-                max-height: 500px;
+                max-height: 26.042vw;
             }
         }
 
@@ -36,9 +37,9 @@
             max-width: 100%;
             width: 100%;
             height: 100%;
-            max-height: 530px;
+            max-height: 27.604vw;
             display: block;
-            margin-bottom: 13px;
+            margin-bottom: 0.677vw;
 
             img {
                 width: 100%;
@@ -52,8 +53,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 46px;
-            height: 46px;
+            width: 2.396vw;
+            height: 2.396vw;
             background: rgba(255, 255, 255, 0.30);
             display: flex;
             align-items: center;
@@ -61,8 +62,8 @@
             transition: all .3s;
 
             img {
-                width: 22px;
-                height: 22px;
+                width: 1.146vw;
+                height: 1.146vw;
             }
 
             &:hover {
@@ -76,24 +77,24 @@
 
         .item-label {
             position: absolute;
-            top: 46px;
-            height: 37px;
+            top: 2.396vw;
+            height: 1.927vw;
             right: 0;
             display: flex;
             align-items: center;
             background-color: #FFF;
-            padding: 0 9px 0 12px;
-            gap: 4px;
+            padding: 0 0.469vw 0 0.625vw;
+            gap: 0.208vw;
 
             img {
-                margin-top: -2px;
+                margin-top: -0.104vw;
                 object-fit: contain;
                 object-position: top center;
             }
 
             span {
                 font-family: "Mikhmoret";
-                font-size: 24px;
+                font-size: 1.25vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 120%;
@@ -102,7 +103,7 @@
             &.favorite {
                 color: #A0B524;
                 span {
-                    margin-right: 3px;
+                    margin-right: 0.156vw;
                 }
             }
 
@@ -124,59 +125,47 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding-bottom: 31px;
+            padding-bottom: 1.615vw;
 
             .price {
                 display: flex;
                 align-items: center;
-                gap: 9px;
-                margin-left: 20px;
+                gap: 0.469vw;
+                margin-left: 1.042vw;
             }
 
             .old-price:not(:empty) {
                 color: #BBAB81;
-                font-size: 24px;
+                font-size: 1.25vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 120%;
                 position: relative;
-                margin-top: 5px;
+                margin-top: 0.26vw;
+            }
 
-                &::after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-60%);
-                    height: 16px;
-                    left: -2px;
-                    width: calc(100% + 4px);
-                    background:
-                    linear-gradient(to top right,
-                        rgba(0,0,0,0) 0%,
-                        rgba(0,0,0,0) calc(50% - 0.8px),
-                        #BBAB81 50%,
-                        rgba(0,0,0,0) calc(50% + 0.8px),
-                        rgba(0,0,0,0) 100%);
+            .old-price {
+                &::before {
+                    left: -0.208vw;
                 }
             }
 
             .new-price {
                 color: #332F2D;
-                font-size: 32px;
+                font-size: 1.667vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 120%;
             }
 
             .add-to-card {
-                width: 48px;
-                height: 48px;
+                width: 2.5vw;
+                height: 2.5vw;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background: #4A352C;
-                margin-right: 15px;
+                margin-right: 0.781vw;
                 transition: all .3s;
                 position: relative;
 
@@ -214,14 +203,15 @@
 
         .item-title {
             width: 100%;
-            margin-bottom: 19px;
+            margin-bottom: 0.99vw;
             color: #332F2D;
             text-align: center;
             font-family: "Mikhmoret";
-            font-size: 28px;
+            font-size: 1.458vw;
             font-style: normal;
             font-weight: 700;
             line-height: 120%;
+            text-decoration: underline;
             text-decoration-color: transparent;
             transition: all .3s;
 
@@ -245,5 +235,105 @@
                 }
             }
         }
+    }
+    
+    @media screen and (max-width:991px) {
+        padding-top: 6.667vw;
+        margin: 0;
+
+        .products-list__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5.333vw 1.067vw;
+        }
+    
+        .item {
+            &.active {
+                background: #E6C785;
+                padding: 2.4vw 1.067vw 0 1.067vw;
+                
+                .item-favorite {
+                    top: 2.4vw;
+                    right: 1.067vw;
+                }
+    
+                .item-label {
+                    top: 9.867vw;
+                    right: 1.067vw;
+                }
+    
+                .item-img {
+                    max-height: 48vw;
+                }
+            }
+    
+            .item-img {
+                max-height: 53.333vw;
+                margin-bottom: 2.133vw;
+            }
+    
+            .item-favorite {
+                width: 7.467vw;
+                height: 7.467vw;
+    
+                img {
+                    width: 3.467vw;
+                    height: 3.467vw;
+                }
+            }
+    
+            .item-label {
+                top: 7.467vw;
+                height: 5.867vw;
+                padding: 0 1.333vw 0 2.133vw;
+                gap: 0;
+    
+                img {
+                    transform: scale(0.7);
+                }
+    
+                span {
+                    font-size: 4.267vw;
+                }
+            }
+    
+            .item-form {
+                padding-bottom: 5.333vw;
+    
+                .price {
+                    gap: 1.333vw;
+                    margin-left: 0;
+                    width: 100%;
+                    justify-content: center;
+                    margin-bottom: 1.333vw;
+                }
+    
+                .old-price:not(:empty) {
+                    font-size: 4.267vw;
+                    margin-top: 0;
+                }
+    
+                .new-price {
+                    font-size: 4.8vw;
+                }
+    
+                .add-to-card {
+                    width: 8.267vw;
+                    height: 8.267vw;
+                    margin-right: 0.8vw;
+    
+                    img {
+                        position: relative;
+                        z-index: 2;
+                        width: 3.467vw;
+                        height: 3.467vw;
+                    }
+                }
+            }
+    
+            .item-title {
+                margin-bottom: 1.333vw;
+                font-size: 3.733vw;
+            }
+        }    
     }
 }

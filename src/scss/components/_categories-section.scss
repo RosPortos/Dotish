@@ -1,5 +1,5 @@
 .categories-section {
-    margin-top: 58px;
+    margin-top: 3.021vw;
 
     &.sticky {
         .categories-list {
@@ -17,9 +17,9 @@
             justify-content: center;
 
             .item {
-                padding: 15px 20px 15px 20px;
+                padding: 0.781vw 1.042vw 0.781vw 1.042vw;
                 max-width: 10%;
-                gap: 10px;
+                gap: 0.521vw;
 
                 &.active {
                     &::before {
@@ -28,12 +28,12 @@
                 }
 
                 .item-icon {
-                    width: 35px;
-                    height: 35px;
+                    width: 1.823vw;
+                    height: 1.823vw;
                 }
 
                 .item-title {
-                    font-size: 22px;
+                    font-size: 1.146vw;
                 }
             }
         }
@@ -43,19 +43,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 1700px;
-        margin: 0 auto;
+        max-width: 88.542vw;
+        margin: 0 auto 0 auto;
         border-bottom: 2px solid #E6DEC9;
-        padding-bottom: 76px;
 
         .item {
             display: flex;
             flex-direction: column;
             align-items: center;
             flex-grow: 1;
-            gap: 15px;
+            gap: 0.781vw;
             text-decoration-color: transparent;
-            padding: 28px 30px 15px 30px;
+            padding: 1.458vw 1.563vw 0.781vw 1.563vw;
             color: #BBAB81;
             position: relative;
             z-index: 1;
@@ -80,7 +79,7 @@
                 width: 100%;
                 height: 2px;
                 background: #E6C785;
-                box-shadow: 0px 8px 29px -5px rgba(0, 0, 0, 0.15);
+                box-shadow: 0vw 0.417vw 1.51vw -0.26vw rgba(0, 0, 0, 0.15);
                 z-index: -1;
                 bottom: -2px;
                 left: 0;
@@ -114,8 +113,8 @@
             }
 
             .item-icon {
-                width: 40px;
-                height: 40px;
+                width: 2.083vw;
+                height: 2.083vw;
 
                 img {
                     width: 100%;
@@ -127,10 +126,138 @@
 
             .item-title {
                 text-align: center;
-                font-size: 28px;
+                font-size: 1.458vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 120%;
+            }
+        }
+    }
+
+    .show-categories-list {
+        display: none;
+    }
+
+    @media screen and (max-width:991px) {
+        margin-top: 0;
+
+        &.sticky {
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            width: 100%;
+
+            .categories-list {
+                animation: none;
+                max-width: 100%;
+                padding: 1.333vw 5.333vw;
+                position: absolute;
+                width: 100%;
+                background: #F5F2EA;
+
+                .item {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 2.933vw;
+                    padding: 2.133vw 0;
+                    color: #6A3F2D;
+                    max-width: 100%;
+
+                    .item-icon {
+                        width: 6.933vw;
+                        height: 6.933vw;
+                    }
+        
+                    .item-title {
+                        font-size: 4.8vw;
+                    }
+                }
+            }
+
+            .show-categories-list {
+                background-color: #f3f2e4ea;
+                margin-top: 0;
+            }
+        }
+
+        .show-categories-list {
+            display: block;
+            background: #E6DEC9;
+            color: #6A3F2D;
+            text-align: right;
+            font-size: 6.4vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 120%; 
+            height: 10.667vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5.333vw;
+            cursor: pointer;
+
+            .arrow {
+                width: 2.933vw;
+                height: 1.6vw;
+                display: block;
+                background-position: center;
+                background-size: 2.933vw;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M12 1L6.5 7L1 1' stroke='%234A352C'/%3E%3C/svg%3E");
+            }
+            + .categories-list {
+                display: none;
+            }
+        }
+    
+        .categories-list {
+            display: block;
+            max-width: 100%;
+            border-bottom: none;
+            padding: 1.333vw 5.333vw;
+            position: absolute;
+            width: 100%;
+            background: #F5F2EA;
+            box-shadow: 0vw 1.333vw 3.467vw -0.8vw rgba(28, 28, 28, 0.35);
+            z-index: 4;
+
+            .item {
+                flex-direction: row;
+                align-items: center;
+                gap: 2.933vw;
+                padding: 2.133vw 0;
+                color: #6A3F2D;
+
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid #DBD5C8;
+                }
+    
+                &::after {
+                    display: none;
+                }
+    
+                &::before {
+                    display: none;
+                }
+    
+                &:hover {
+                    color: #6A3F2D;
+                    background-color: #E6DEC9;
+                }
+    
+                &.active {
+                    color: #6A3F2D;
+                    background-color: #E6DEC9;
+                }
+    
+                .item-icon {
+                    width: 6.933vw;
+                    height: 6.933vw;
+                    filter: brightness(0) saturate(100%) invert(24%) sepia(18%) saturate(1479%) hue-rotate(332deg) brightness(96%) contrast(87%);
+                }
+    
+                .item-title {
+                    font-size: 4.8vw;
+                }
             }
         }
     }

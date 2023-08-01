@@ -12,13 +12,19 @@
     <main class="main">
         <div class="checkout">
             <div class="container">
-                <div class="checkout-top">
-                    <div class="title">Checkout</div>
-                    <a href="#" class="back">חזרה לעגלה</a>
-                </div>
                 <div class="checkout-wrapper">
+                    <div class="checkout-top">
+                        <div class="title">Checkout</div>
+                        <a href="#" class="back">חזרה לעגלה</a>
+                    </div>
                     <div class="checkout-cart">
-                        <div class="checkout-title">ההזמנה שלך</div>
+                        <div class="checkout-title" id="show-form">
+                            <h2>ההזמנה שלך </h2>
+                            <div class="sum">
+                                (סה"כ:
+                                <b>3040 ₪</b>)
+                            </div>
+                        </div>
                         <section class="cart-section">
                             <div class="cart-table">
                                 <div class="cart-table__header">
@@ -293,9 +299,23 @@
                                     <div class="checkout-title">
                                         כתובת למשלוח                                
                                     </div>
-                                    <div class="input-field">
+                                    <div class="select-field">
                                         <div class="wpcf7-form-control-wrap">
-                                            <input type="text" placeholder="*עיר">
+                                            <select name="" id="" class="select-city">
+                                                <option value=""></option>
+                                                <option value="אבן יעיר">אבן יעיר</option>
+                                                <option value="אבטליון">אבטליון</option>
+                                                <option value="אבן מנחם">אבן מנחם</option>
+                                                <option value="אבן רוגל">אבן רוגל</option>
+                                                <option value="אבן שמואל">אבן שמואל</option>
+                                                <option value="אבן תימא ">אבן תימא </option>
+                                                <option value="אבן יעיר">אבן יעיר</option>
+                                                <option value="אבטליון">אבטליון</option>
+                                                <option value="אבן מנחם">אבן מנחם</option>
+                                                <option value="אבן רוגל">אבן רוגל</option>
+                                                <option value="אבן שמואל">אבן שמואל</option>
+                                                <option value="אבן תימא ">אבן תימא </option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="input-field">
