@@ -307,12 +307,12 @@
         .cart-item {
             padding: 9.333vw 0 4vw 0.533vw;
             display: grid;
-            grid-template-columns: 24vw 1fr;
+            grid-template-columns: 21vw 1fr;
             gap: 1.333vw 5.333vw;
             align-items: flex-start;
     
             .cart-item__img {
-                width: 24vw;
+                width: 21vw;
                 height: 100%;
                 grid-row: 1/3;
             }
