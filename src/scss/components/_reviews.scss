@@ -1,9 +1,17 @@
 .reviews {
     background-color: #EEEAE1;
-    padding: 140px 0;
+    padding: 7.29167vw 0;
 
     .title {
-        margin-bottom: 70px;
+        margin-bottom: 3.64583vw;
         color: #332F2D;
+    }
+
+    .reviews__wrapper {
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
     }
 }

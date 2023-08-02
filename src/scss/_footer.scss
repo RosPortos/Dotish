@@ -4,19 +4,20 @@
     background-size: cover;
 
     .footer__top {
-        padding: 90px 0;
+        padding: 4.6875vw 0;
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 1.04167vw;
         grid-template-columns: 1fr 2fr 2.6fr;
     }
 
     .footer__info {
-        margin-left: 40px;
+        margin-left: 2.08333vw;
+
         .logo {
-            width: 194px;
+            width: 10.10417vw;
             height: auto;
             display: block;
-            margin-bottom: 33px;
+            margin-bottom: 1.71875vw;
 
             img {
                 width: 100%;
@@ -31,18 +32,18 @@
         font-family: 'Mikhmoret';
         color: #B7B0AE;
         text-align: right;
-        font-size: 24px;
+        font-size: 1.25vw;
         font-style: normal;
         font-weight: 300;
         line-height: 120%;
-        margin-bottom: 62px;
+        margin-bottom: 3.22917vw;
     }
 
     .footer__info-link {
         color: #FFF;
         text-align: right;
         font-family: 'Mikhmoret';
-        font-size: 24px;
+        font-size: 1.25vw;
         font-style: normal;
         font-weight: 300;
         line-height: 120%;
@@ -50,7 +51,7 @@
         display: block;
 
         &:not(:last-of-type) {
-            margin-bottom: 25px;
+            margin-bottom: 1.30208vw;
         }
 
         &:hover {
@@ -63,25 +64,27 @@
         justify-content: center;
         align-items: flex-start;
         flex-grow: 1;
-        gap: 30px;
+        gap: 1.5625vw;
 
         .footer__nav-wrap {
-            min-width: 170px;
+            min-width: 8.85417vw;
 
             ul {
                 display: flex;
                 flex-direction: column;
-                gap: 35px;
+                gap: 1.82292vw;
+
                 li {
                     a {
                         color: #B7B0AE;
                         text-align: right;
                         font-family: 'Mikhmoret';
-                        font-size: 24px;
+                        font-size: 1.25vw;
                         font-style: normal;
                         font-weight: 300;
                         line-height: 120%;
                         text-decoration: none;
+
                         &:hover {
                             text-decoration: underline;
                         }
@@ -94,22 +97,22 @@
     .footer__nav-title {
         color: #FFF;
         font-family: 'Mikhmoret';
-        font-size: 32px;
+        font-size: 1.66667vw;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin-bottom: 40px;
+        margin-bottom: 2.08333vw;
     }
 
     .footer__map {
-        > * {
+        >* {
             width: 100%;
         }
     }
 
     .footer__bottom {
-        padding: 36px 0;
-        border-top: 1px solid #695B55;
+        padding: 1.875vw 0;
+        border-top: 0.05208vw solid #695B55;
     }
 
     .footer__bottom-wrap {
@@ -122,7 +125,7 @@
     .footer__bottom-left {
         color: #B7B0AE;
         font-family: 'Mikhmoret';
-        font-size: 24px;
+        font-size: 1.25vw;
         font-style: normal;
         font-weight: 300;
         line-height: 120%;
@@ -142,7 +145,7 @@
         color: #B7B0AE;
         text-align: center;
         font-family: 'Mikhmoret';
-        font-size: 24px;
+        font-size: 1.25vw;
         font-style: normal;
         font-weight: 300;
         line-height: 120%;
@@ -151,14 +154,15 @@
 
     .soc-wrap {
         display: grid;
-        grid-gap: 12px;
-        grid-template-columns: repeat(3, 19px);
+        grid-gap: 0.625vw;
+        grid-template-columns: repeat(3, 0.98958vw);
         text-align: right;
 
         a {
-            width: 19px;
-            height: 19px;
+            width: 0.98958vw;
+            height: 0.98958vw;
             transition: transform .3s;
+            display: block;
 
             img {
                 width: 100%;

@@ -1,37 +1,38 @@
 .main-title {
     font-weight: 700;
-    font-size: 80px;
+    font-size: 4.16667vw;
     line-height: 1.2;
     color: #FFFFFF;
 
-    @media screen and (max-width:991px) {
-        font-size: 45px;
+    @media screen and (max-width:51.61458vw) {
+        font-size: 2.34375vw;
     }
 }
 
 .middle-title {
     font-weight: 700;
-    font-size: 65px;
+    font-size: 3.38542vw;
     line-height: 1.2;
     color: #000000;
-    @media screen and (max-width:991px) {
-        font-size: 36px;
+
+    @media screen and (max-width:51.61458vw) {
+        font-size: 1.875vw;
     }
 }
 
 section.text {
-    padding: 140px 0;
+    padding: 7.29167vw 0;
     background-color: #F3F2E4;
 }
 
 .text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.25vw;
     line-height: 1.2;
     color: #332F2D;
 
     *:not(img, ul, ol, li, blockquote) {
-        margin-bottom: 30px;
+        margin-bottom: 1.5625vw;
     }
 
     *:last-child {
@@ -49,26 +50,29 @@ section.text {
         color: #332F2D;
     }
 
-    h1, h2 {
-        font-size: 80px;
-        margin-left: 19px;
+    h1,
+    h2 {
+        font-size: 4.16667vw;
+        margin-left: 0.98958vw;
     }
 
     h3 {
-        font-size: 45px;
-        margin-bottom: 30px;
+        font-size: 2.34375vw;
+        margin-bottom: 1.5625vw;
     }
 
-    h4, h5 {
-        font-size: 32px;
+    h4,
+    h5 {
+        font-size: 1.66667vw;
     }
 
     h5,
     h6 {
-        font-size: 27px;
+        font-size: 1.40625vw;
     }
 
-    strong, b {
+    strong,
+    b {
         font-weight: 700;
         color: #332F2D;
     }
@@ -80,23 +84,23 @@ section.text {
 
     blockquote {
         background: #E5DDC8;
-        border-radius: 15px;
+        border-radius: 0.78125vw;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 1.25vw;
         line-height: 1.3;
         text-align: center;
         color: #FFFFFF;
-        padding: 74px 116px;
+        padding: 3.85417vw 6.04167vw;
         position: relative;
         z-index: 2;
 
         &::before {
             content: "";
             position: absolute;
-            top: 35px;
-            left: 37px;
-            width: 60px;
-            height: 47px;
+            top: 1.82292vw;
+            left: 1.92708vw;
+            width: 3.125vw;
+            height: 2.44792vw;
             opacity: 0.45;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='47' fill='none'%3E%3Cpath fill='%23fff' d='M20.25 22.563H5.893a21.937 21.937 0 0 1 9.482-14.967l4.363-2.925L17.057.625 12.694 3.55A26.813 26.813 0 0 0 .75 25.853v16.21a4.875 4.875 0 0 0 4.875 4.874H20.25a4.875 4.875 0 0 0 4.875-4.874V27.437a4.875 4.875 0 0 0-4.875-4.875ZM54.375 22.563H40.018A21.938 21.938 0 0 1 49.5 7.595l4.363-2.925L51.206.625 46.82 3.55a26.812 26.812 0 0 0-11.944 22.303v16.21a4.875 4.875 0 0 0 4.875 4.874h14.625a4.875 4.875 0 0 0 4.875-4.874V27.437a4.875 4.875 0 0 0-4.875-4.875Z'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
@@ -110,17 +114,17 @@ section.text {
         max-width: 100%;
         height: auto;
         object-fit: contain;
-        margin: 50px 0;
+        margin: 2.60417vw 0;
     }
 
     .alignleft {
         float: left;
-        margin-right: 8px;
+        margin-right: 0.41667vw;
     }
 
     .alignright {
         float: right;
-        margin-left: 8px;
+        margin-left: 0.41667vw;
     }
 
     .aligncenter {
@@ -128,10 +132,10 @@ section.text {
     }
 
     ul {
-        margin-bottom: 28px;
+        margin-bottom: 1.45833vw;
 
         li {
-            padding-right: 16px;
+            padding-right: 0.83333vw;
             position: relative;
             z-index: 2;
             color: #696766;
@@ -139,12 +143,12 @@ section.text {
             &::after {
                 content: "";
                 position: absolute;
-                top: 12px;
+                top: 0.625vw;
                 right: 0;
-                width: 6px;
-                height: 6px;
+                width: 0.3125vw;
+                height: 0.3125vw;
                 border-radius: 50%;
-                border: 1px solid #696766;
+                border: 0.05208vw solid #696766;
             }
 
             ol {
@@ -162,7 +166,7 @@ section.text {
                         counter-increment: numUl;
                         content: counters(numUl, '.') '.';
                         font-weight: 400;
-                        font-size: 24px;
+                        font-size: 1.25vw;
                         line-height: 1.2;
                         color: #696766;
                     }
@@ -173,45 +177,45 @@ section.text {
 
     ol {
         counter-reset: numOl;
-        margin-bottom: 28px;
+        margin-bottom: 1.45833vw;
 
         li {
             list-style-type: none;
             color: #696766;
-            padding-right: 25px;
+            padding-right: 1.30208vw;
             position: relative;
 
             &::before {
                 counter-increment: numOl;
                 content: counters(numOl, '.') '.';
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 1.25vw;
                 line-height: 1.2;
                 color: #696766;
-                padding-left: 16px;
+                padding-left: 0.83333vw;
                 position: absolute;
                 right: 0;
             }
 
             ol {
-                padding-right: 16px;
+                padding-right: 0.83333vw;
             }
 
             ul {
-                padding-right: 16px;
+                padding-right: 0.83333vw;
 
                 li {
-                    padding-right: 16px;
+                    padding-right: 0.83333vw;
                     position: relative;
                     z-index: 2;
 
                     &::after {
                         content: "";
                         position: absolute;
-                        top: 12px;
+                        top: 0.625vw;
                         right: 0;
-                        width: 5px;
-                        height: 5px;
+                        width: 0.26042vw;
+                        height: 0.26042vw;
                         border-radius: 50%;
                         background-color: #3E3E3E;
                     }
@@ -232,31 +236,31 @@ section.text {
 
 @media screen and (max-width:991px) {
     .text {
-        font-size: 18px;
+        font-size: 0.9375vw;
 
         *:not(img, ul, ol, li, blockquote) {
-            margin-bottom: 15px;
+            margin-bottom: 0.78125vw;
         }
 
         h1 {
-            font-size: 45px;
+            font-size: 2.34375vw;
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 1.875vw;
         }
 
         h3 {
-            font-size: 27px;
+            font-size: 1.40625vw;
         }
 
         h4 {
-            font-size: 24px;
+            font-size: 1.25vw;
         }
 
         h5,
         h6 {
-            font-size: 21px;
+            font-size: 1.09375vw;
         }
 
         .alignleft,
@@ -265,34 +269,34 @@ section.text {
             float: none;
             margin: 0 auto;
         }
-    
-    
+
+
 
         blockquote {
-            font-size: 18px;
-            padding: 138px 25px 62px;
+            font-size: 0.9375vw;
+            padding: 7.1875vw 1.30208vw 3.22917vw;
 
             &::before {
-                top: 57px;
+                top: 2.96875vw;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 58px;
-                height: 46px;
+                width: 3.02083vw;
+                height: 2.39583vw;
             }
         }
 
         ul {
             li {
-                padding-right: 10px;
+                padding-right: 0.52083vw;
 
                 &::after {
-                    top: 8px;
+                    top: 0.41667vw;
                 }
 
                 ol {
                     li {
                         &::before {
-                            font-size: 18px;
+                            font-size: 0.9375vw;
                         }
                     }
                 }
@@ -302,21 +306,21 @@ section.text {
         ol {
             li {
                 &::before {
-                    font-size: 18px;
+                    font-size: 0.9375vw;
                 }
 
                 ol {
-                    padding-right: 10px;
+                    padding-right: 0.52083vw;
                 }
 
                 ul {
-                    padding-right: 10px;
+                    padding-right: 0.52083vw;
 
                     li {
-                        padding-right: 10px;
+                        padding-right: 0.52083vw;
 
                         &::after {
-                            top: 8px;
+                            top: 0.41667vw;
                         }
                     }
                 }

@@ -1,13 +1,12 @@
 .promo {
     position: relative;
+
     &::before {
         position: absolute;
         content: "";
-        background: linear-gradient(
-                180deg,
+        background: linear-gradient(180deg,
                 rgba(0, 0, 0, 0.6) 0%,
-                rgba(0, 0, 0, 0) 100%
-            ),
+                rgba(0, 0, 0, 0) 100%),
             linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 75.12%);
         left: 0;
         top: 0;
@@ -30,31 +29,35 @@
 }
 
 .promo__wrapper {
-    padding: 330px 0 270px;
+    padding: 17.1875vw 0 14.0625vw;
 }
 
 .promo__offer {
-    max-width: 750px;
+    max-width: 39.0625vw;
 }
+
 .promo__subtitle {
     color: #fff;
     text-align: right;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-weight: 300;
 }
+
 .promo__title {
     color: #fff;
-    font-size: 130px;
+    font-size: 6.77083vw;
     font-weight: 700;
 }
+
 .promo__descr {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-weight: 300;
     line-height: 120%;
 }
+
 .promo__btns {
-    margin-top: 40px;
-    gap: 7px;
+    margin-top: 2.08333vw;
+    gap: 0.36458vw;
     display: flex;
 }

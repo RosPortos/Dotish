@@ -11,11 +11,19 @@ sliderCards.forEach((slider) => {
             nextEl: slider.querySelector(".swiper-button-next"),
             prevEl: slider.querySelector(".swiper-button-prev"),
         },
-        /* breakpoints: {
-            1150: {
-                slidesPerView: 3,
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
             },
-        }, */
+            300: {
+                slidesPerView: 3.2,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+            },
+        },
     });
 });
 

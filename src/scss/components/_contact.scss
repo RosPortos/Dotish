@@ -1,6 +1,6 @@
 .contact {
-    padding: 138px 0;
-    
+    padding: 7.1875vw 0;
+
     &.dark-bg {
         background-image: url('../img/footer-bg.png');
         background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     }
 
     .title {
-        margin-bottom: 123px;
+        margin-bottom: 6.40625vw;
     }
 
     .contact__wrapper {
@@ -41,7 +41,7 @@
         grid-template-columns: repeat(2, 1fr);
         flex-grow: 1;
         max-width: 43%;
-        grid-gap: 85px 30px;
+        grid-gap: 4.42708vw 1.5625vw;
 
         .contact-item {
             display: flex;
@@ -50,9 +50,9 @@
             justify-content: center;
 
             .contact-item__icon {
-                width: 60px;
-                height: 60px;
-                margin-bottom: 10px;
+                width: 3.125vw;
+                height: 3.125vw;
+                margin-bottom: 0.52083vw;
 
                 img {
                     width: 100%;
@@ -65,7 +65,7 @@
             .contact-item__text {
                 color: #FFF;
                 text-align: center;
-                font-size: 32px;
+                font-size: 1.66667vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 120%;

@@ -1,13 +1,13 @@
 .instagram {
     background: #4A352C;
-    padding: 140px 0;
+    padding: 7.29167vw 0;
 
     .instagram__title {
-        width: 367px;
+        width: 19.11458vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 45px auto; 
+        margin: 0 auto 2.34375vw auto;
 
         img {
             width: 100%;
@@ -20,11 +20,11 @@
     .instagram__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 47px;
-        margin-bottom: 69px;
+        grid-gap: 2.44792vw;
+        margin-bottom: 3.59375vw;
 
         .fslightbox {
-            height: 389px;
+            height: 20.26042vw;
 
             img {
                 width: 100%;

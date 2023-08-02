@@ -3,8 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 25px;
-    padding: 20px 0;
+    margin-top: 1.30208vw;
+    padding: 1.04167vw 0;
 }
 
 .card-slider {
@@ -15,9 +15,9 @@
     }
 
     .container {
-        border-bottom: 1px solid #7C665C;
-        padding: 100px 15px;
-        max-width: 1500px;
+        border-bottom: 0.05208vw solid #7C665C;
+        padding: 5.20833vw 0.78125vw;
+        max-width: 78.125vw;
     }
 }
 
@@ -30,7 +30,7 @@
 }
 
 .card-slider__wrapper {
-    margin-top: 70px;
+    margin-top: 3.64583vw;
     position: relative;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .category-slide__img {
-    height: 456px;
+    height: 23.75vw;
 
     img {
         width: 100%;
@@ -51,19 +51,19 @@
 .category-slide__title {
     color: #FFF;
     text-align: center;
-    font-size: 28px;
+    font-size: 1.45833vw;
     font-weight: 700;
-    margin-top: 23px;
+    margin-top: 1.19792vw;
 }
 
 .card-slider__btn {
-    margin: 70px auto 0 auto;
+    margin: 3.64583vw auto 0 auto;
     display: block;
     width: fit-content;
 }
 
 .menu-slide__img {
-    height: 455px;
+    height: 23.69792vw;
     width: 100%;
 
     img {
@@ -75,7 +75,7 @@
 
 .menu-slide__bottom {
     background: #F3F2E4;
-    padding: 30px;
+    padding: 1.5625vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,28 +84,28 @@
 
 .menu-slide__title {
     color: #332F2D;
-    font-size: 28px;
+    font-size: 1.45833vw;
     font-weight: 700;
 }
 
 .menu-slide__price {
     color: #332F2D;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-weight: 300;
     line-height: 120%;
-    margin-top: 10px;
+    margin-top: 0.52083vw;
 }
 
 .menu-slide__btn {
-    margin-top: 10px;
+    margin-top: 0.52083vw;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    width: 56px;
-    height: 56px;
+    width: 2.91667vw;
+    height: 2.91667vw;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 0.05208vw solid #fff;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
 
@@ -120,7 +120,7 @@
     }
 
     &::after {
-        font-size: 18px;
+        font-size: 0.9375vw;
         font-weight: 500;
         color: #fff;
         transition: color 0.3s ease-in-out;
@@ -128,9 +128,9 @@
 }
 
 .swiper-button-next {
-    right: -100px;
+    right: -5.20833vw;
 }
 
 .swiper-button-prev {
-    left: -100px;
+    left: -5.20833vw;
 }

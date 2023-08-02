@@ -1,36 +1,36 @@
 .quantity {
-    border: 1px solid #D4BEB4;
+    border: 0.05208vw solid #D4BEB4;
     background: #FFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 122px;
-    height: 48px;
+    width: 6.35417vw;
+    height: 2.5vw;
 
     input {
         border: none;
-        border-left: 1px solid #D4BEB4;
-        border-right: 1px solid #D4BEB4;
-        width: 30px;
+        border-left: 0.05208vw solid #D4BEB4;
+        border-right: 0.05208vw solid #D4BEB4;
+        width: 1.5625vw;
         color: #6A3F2D;
-        font-size: 21px;
+        font-size: 1.09375vw;
         font-weight: 300;
         text-align: center;
-        padding-top: 4px;
+        padding-top: 0.20833vw;
     }
 
     div {
         color: #6A3F2D;
-        font-size: 21px;
+        font-size: 1.09375vw;
         font-weight: 300;
         cursor: pointer;
         user-select: none;
-        height: 48px;
+        height: 2.5vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 45px;
-        padding-top: 5px;
+        width: 2.34375vw;
+        padding-top: 0.26042vw;
     }
 }
 
