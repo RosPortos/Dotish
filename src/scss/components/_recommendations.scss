@@ -1,19 +1,32 @@
 .recommendations {
-    padding: 100px 0;
+    padding: 5.208vw 0;
     background: #E5DDC8;
 
     .recommendations__wrapper  {
-        margin-right: 428px;
+        margin-right: 22.292vw;
 
         .title {
             color: #332F2D;
-            margin-bottom: 40px;
+            margin-bottom: 2.083vw;
             text-align: right;
         }
 
         .tag {
             .item {
                 background-color: #F3F2E4;
+            }
+        }
+    }
+
+    @media screen and (max-width:991px) {
+        padding: 13.333vw 0;
+
+
+        .recommendations__wrapper  {
+            margin-right: 0;
+
+            .title {
+                margin-bottom: 5.333vw;
             }
         }
     }

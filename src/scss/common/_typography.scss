@@ -235,32 +235,41 @@ section.text {
 
 
 @media screen and (max-width:991px) {
+
+    section.text {
+        padding: 15.29167vw 0;
+    }
+
     .text {
-        font-size: 0.9375vw;
+        font-size: 5.6vw;
+
+        p {
+            font-size: 5.6vw;
+        }
 
         *:not(img, ul, ol, li, blockquote) {
-            margin-bottom: 0.78125vw;
+            margin-bottom: 4.78125vw;
         }
 
         h1 {
-            font-size: 2.34375vw;
+            font-size: 12vw;
         }
 
         h2 {
-            font-size: 1.875vw;
+            font-size: 9.6vw;
         }
 
         h3 {
-            font-size: 1.40625vw;
+            font-size: 7.2vw;
         }
 
         h4 {
-            font-size: 1.25vw;
+            font-size: 6.4vw;
         }
 
         h5,
         h6 {
-            font-size: 1.09375vw;
+            font-size: 5.6vw;
         }
 
         .alignleft,
@@ -269,8 +278,6 @@ section.text {
             float: none;
             margin: 0 auto;
         }
-
-
 
         blockquote {
             font-size: 0.9375vw;
@@ -285,18 +292,25 @@ section.text {
             }
         }
 
+        img {
+            margin: 7vw 0;
+        }
+
         ul {
+            margin-bottom: 7.333vw;
             li {
-                padding-right: 0.52083vw;
+                padding-right: 2.52083vw;
 
                 &::after {
-                    top: 0.41667vw;
+                    top: 2.01667vw;
+                    width: 1.067vw;
+                    height: 1.067vw;
                 }
 
                 ol {
                     li {
                         &::before {
-                            font-size: 0.9375vw;
+                            font-size: 5.6vw;
                         }
                     }
                 }
@@ -304,9 +318,13 @@ section.text {
         }
 
         ol {
+            margin-bottom: 7.333vw;
             li {
+                font-size: 5.6vw;
+                padding-right: 5vw;
+
                 &::before {
-                    font-size: 0.9375vw;
+                    font-size: 5.6vw;
                 }
 
                 ol {
